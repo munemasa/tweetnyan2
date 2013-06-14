@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:text="Reply to @amano_rox" android:layout_height="wrap_content" android:id="@+id/text_in_reply_to" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content"></TextView>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edit_tweet"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:inputType="textMultiLine" >
+</EditText>
+
+        <TextView
+            android:id="@+id/numof_characters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+    </LinearLayout>
+    <TextView android:text="Referenced Text" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="5dip" android:id="@+id/referenced_text" android:textAppearance="?android:attr/textAppearanceSmall"></TextView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="3dip">
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/send" >
+</Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" >
+</Button>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout3">
+        <ImageView android:id="@+id/attachment_thumbnail" android:visibility="gone" android:src="@drawable/ic_dummy" android:layout_width="75dip" android:layout_height="75dip"></ImageView>
+        <ImageView android:visibility="gone" android:src="@drawable/ic_dummy" android:id="@+id/geolocation_thumbnail" android:layout_width="75dip" android:layout_height="75dip"></ImageView>
+    </LinearLayout>
+    
+</LinearLayout>

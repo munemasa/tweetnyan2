@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="タイムライン"><ListPreference android:title="取得するツイート数" android:entries="@array/number_of_tweets_to_retrieve" android:entryValues="@array/number_of_tweets_to_retrieve_value" android:key="number_of_tweets_to_retrieve" android:defaultValue="20" android:summary="一度に取得するツイート数の上限を設定します。"></ListPreference><ListPreference android:key="where_to_move_when_timeline_updated" android:entries="@array/where_to_move_when_update" android:entryValues="@array/where_to_move_when_update_value" android:defaultValue="0" android:title="自動スクロール" android:summary="タイムラインを更新したときの移動先を設定します。"></ListPreference>
+    <CheckBoxPreference android:summary="ツイートの取得にユーザーストリームを使用します。" android:key="use_user_stream" android:title="ストリームを使用する(未実装)"></CheckBoxPreference>
+    
+    
+<PreferenceScreen android:title="通知設定" android:summary="更新を行った時、新着ツイートの通知方法を設定します。">
+    <PreferenceCategory android:title="ホーム">
+        
+        <CheckBoxPreference android:title="通知音" android:key="notify_sound_home"></CheckBoxPreference>
+        <CheckBoxPreference android:title="LED" android:key="notify_led_home"></CheckBoxPreference>
+        <CheckBoxPreference android:title="バイブレーション" android:key="notify_vibration_home"></CheckBoxPreference>
+    </PreferenceCategory><PreferenceCategory android:title="＠関連">
+        
+        <CheckBoxPreference android:title="通知音" android:key="notify_sound_mensions"></CheckBoxPreference>
+        <CheckBoxPreference android:title="LED" android:key="notify_led_mensions"></CheckBoxPreference>
+        <CheckBoxPreference android:title="バイブレーション" android:key="notify_vibration_mensions"></CheckBoxPreference>
+    </PreferenceCategory><PreferenceCategory android:title="ダイレクトメッセージ">
+        <CheckBoxPreference android:title="通知音" android:key="notify_sound_dm"></CheckBoxPreference>
+        <CheckBoxPreference android:title="LED" android:key="notify_led_dm"></CheckBoxPreference>
+        <CheckBoxPreference android:title="バイブレーション" android:key="notify_vibration_dm"></CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen></PreferenceCategory><PreferenceCategory android:title="自動更新（未実装）"><ListPreference android:key="auto_update_interval" android:title="自動更新の間隔" android:entries="@array/autoupdate_interval" android:entryValues="@array/autoupdate_interval_value" android:defaultValue="0" android:summary="タイムラインの更新間隔を設定します。"></ListPreference>
+
+<ListPreference android:key="auto_update_interval_dm" android:title="自動更新の間隔(DM)" android:summary="ダイレクトメッセージの更新間隔を設定します。" android:entryValues="@array/autoupdate_interval_value" android:entries="@array/autoupdate_interval" android:defaultValue="0"></ListPreference><CheckBoxPreference android:key="autoupdate_home" android:summary="Homeの自動更新を行います。" android:title="ホーム"></CheckBoxPreference><CheckBoxPreference android:key="autoupdate_mensions" android:summary="Mensionsの自動更新を行います。" android:title="＠関連"></CheckBoxPreference><CheckBoxPreference android:key="autoupdate_dm" android:summary="DMの自動更新を行います。" android:title="ダイレクトメッセージ"></CheckBoxPreference>
+
+
+</PreferenceCategory><PreferenceCategory android:title="表示形式">
+    <ListPreference android:key="date_format" android:title="ツイート日時の表示方法" android:entries="@array/date_format" android:entryValues="@array/date_format_value" android:defaultValue="0"></ListPreference>
+</PreferenceCategory><PreferenceCategory android:title="アップロード">
+    <ListPreference android:entryValues="@array/picture_upload_destination_value" android:entries="@array/picture_upload_destination" android:key="picture_upload_target" android:title="画像のアップロード先" android:defaultValue="0"/>
+</PreferenceCategory><PreferenceCategory android:title="キャッシュ" android:key="cache"><Preference android:title="アイコンキャッシュを消去する" android:key="clear_iconcache"></Preference>
+
+
+</PreferenceCategory><PreferenceScreen android:title="Test Screen">
+        <CheckBoxPreference android:key="do_something" android:title="何かする"></CheckBoxPreference>
+    </PreferenceScreen>
+
+
+
+
+
+    
+    
+</PreferenceScreen>

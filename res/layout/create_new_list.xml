@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:singleLine="true" android:id="@+id/list_name">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="@string/list_description"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/numof_characters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:text="0 characters"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:inputType="textMultiLine" android:lines="5" android:gravity="top" android:id="@+id/list_description"></EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/list_description_helptext" >
+</TextView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/privacy"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+</TextView>
+    <RadioGroup android:id="@+id/list_disclosure_level" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/list_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/public_list" >
+</RadioButton>
+
+        <RadioButton
+            android:id="@+id/list_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/private_list" >
+</RadioButton>
+    </RadioGroup>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_gravity="bottom" android:layout_height="fill_parent" android:gravity="bottom" android:layout_marginBottom="3dip">
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/ok" >
+</Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" >
+</Button>
+    </LinearLayout>
+    
+</LinearLayout>

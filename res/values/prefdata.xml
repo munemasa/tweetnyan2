@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number_of_tweets_to_retrieve">
+            <item>20 件</item>
+            <item>50 件</item>
+            <item>100 件</item>
+            <item>150 件</item>
+            <item>200 件</item>
+        </string-array>
+        <string-array name="number_of_tweets_to_retrieve_value">
+            <item>20</item>
+            <item>50</item>
+            <item>100</item>
+            <item>150</item>
+            <item>200</item>
+        </string-array>
+        <string-array name="where_to_move_when_update">
+            <item>現在の表示位置を維持</item>
+            <item>既読の先頭まで移動</item>
+            <item>一番上まで移動</item>
+            <item>何もしない</item>
+        </string-array>
+        <string-array name="where_to_move_when_update_value">
+            <item>0</item>
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+        </string-array>
+        <string-array name="date_format">
+            <item>経過時間で表示</item>
+            <item>日時で表示</item>
+        </string-array>
+        <string-array name="date_format_value">
+			<item>0</item>
+            <item>1</item>
+        </string-array>
+        <string-array name="autoupdate_interval">
+			<item>なし</item>
+            <item>1分ごと</item>
+            <item>2分ごと</item>
+            <item>3分ごと</item>
+            <item>5分ごと</item>
+            <item>10分ごと</item>
+            <item>30分ごと</item>
+            <item>1時間ごと</item>
+        </string-array>
+        <string-array name="autoupdate_interval_value">
+            <item>0</item>
+            <item>60</item>
+            <item>120</item>
+            <item>180</item>
+            <item>300</item>
+            <item>600</item>
+            <item>1800</item>
+            <item>3600</item>
+        </string-array>
+        <string-array name="picture_upload_destination">
+            <item >Twitter</item>
+            <item >Twitpic</item>
+        </string-array>
+        <string-array name="picture_upload_destination_value">
+            <item >0</item>
+            <item >1</item>
+        </string-array>
+</resources>

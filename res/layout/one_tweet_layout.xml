@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:orientation="horizontal" android:layout_height="wrap_content">
+    <TextView android:layout_width="5dip" android:layout_height="fill_parent" android:id="@+id/color_label"></TextView>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:orientation="vertical" android:layout_height="wrap_content">
+        <ImageView android:layout_height="48dip" android:id="@+id/user_icon" android:src="@drawable/ic_dummy" android:layout_margin="3dip" android:layout_width="48dip"></ImageView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/frameLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/favorite_on" android:id="@+id/img_faved" android:layout_marginRight="8dip" android:layout_gravity="center_vertical|right" android:layout_height="16dip" android:layout_width="16dip"></ImageView>
+            <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout2" android:layout_height="fill_parent">
+                <ImageView android:src="@drawable/retweet_on" android:id="@+id/img_retweeted" android:layout_marginRight="3dip" android:layout_gravity="center_vertical" android:layout_height="16dip" android:layout_width="16dip"></ImageView>
+                <TextView android:layout_width="wrap_content" android:id="@+id/twitter_screen_name" android:layout_height="wrap_content" android:text="amano_rox"></TextView>
+                <ImageView android:src="@android:drawable/ic_lock_lock" android:layout_height="16dip" android:layout_width="16dip" android:id="@+id/locked_user" android:visibility="visible" android:layout_marginRight="8dip" android:layout_marginLeft="5dip"></ImageView>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:text="あまの" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#303030" android:id="@+id/twitter_user_name" android:textSize="11dip"></TextView>
+        <TextView android:id="@+id/tweet_body" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="FSS!" android:textColorLink="#9090FF"></TextView>
+        <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout3" android:layout_height="wrap_content">
+            <TextView android:textSize="11dip" android:layout_height="wrap_content" android:text="2011/9/3 01:48:38 from Tweetnyan" android:id="@+id/tweet_date_and_client" android:layout_width="wrap_content" android:textColor="#303030"></TextView>
+            <ImageView android:layout_height="12dip" android:layout_gravity="right" android:layout_width="12dip" android:src="@android:drawable/stat_notify_chat" android:layout_marginLeft="3dip" android:id="@+id/tweet_have_in_reply_to" android:visibility="gone"></ImageView>
+            <ImageView android:layout_width="12dip" android:visibility="gone" android:layout_height="12dip" android:layout_marginLeft="3dip" android:layout_gravity="right" android:id="@+id/tweet_have_geolocation" android:src="@drawable/mapdrop"></ImageView>
+        </LinearLayout>
+        <TextView android:layout_height="wrap_content" android:text="Retweeted by amano_rox" android:layout_width="wrap_content" android:id="@+id/tweet_retweeted_by" android:textSize="11dip" android:textColor="#303030"></TextView>
+    </LinearLayout>
+    
+</LinearLayout>
