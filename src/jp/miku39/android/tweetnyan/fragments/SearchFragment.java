@@ -267,7 +267,7 @@ public class SearchFragment extends Fragment {
 			@Override
 			public void run() {
 				try {
-					final Trends trends = mMainActivity.getTwitter().getLocationTrends(23424856);
+					final Trends trends = mMainActivity.getTwitter().getPlaceTrends(23424856);
 
 					// UI更新
 					getActivity().runOnUiThread( new Runnable() {

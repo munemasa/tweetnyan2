@@ -62,13 +62,11 @@ public class Lib {
 	 */
 	public static Twitter createTwitter(AccessToken accesstoken){
 		ConfigurationBuilder cb = new ConfigurationBuilder();
-		cb.setDebugEnabled(true)
-		  .setOAuthConsumerKey(OAuthParam.sConsumerKey)
-		  .setOAuthConsumerSecret(OAuthParam.sConsumerSecret)
-		  .setOAuthAccessToken(accesstoken.getToken())
-		  .setOAuthAccessTokenSecret(accesstoken.getTokenSecret())
-		  .setHttpConnectionTimeout( 20*1000 )
-		  .setHttpReadTimeout( 60*1000 );
+		cb.setDebugEnabled(true).setOAuthConsumerKey(OAuthParam.sConsumerKey)
+				.setOAuthConsumerSecret(OAuthParam.sConsumerSecret)
+				.setOAuthAccessToken(accesstoken.getToken())
+				.setOAuthAccessTokenSecret(accesstoken.getTokenSecret())
+				.setHttpConnectionTimeout(20 * 1000).setHttpReadTimeout(60 * 1000);
 
 		TwitterFactory tf = new TwitterFactory(cb.build());
 		Twitter twitter = tf.getInstance();	

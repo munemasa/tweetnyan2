@@ -390,7 +390,7 @@ public class TweetnyanMainActivity extends ActivityWithTheme implements TabListe
 	@Override
 	public void onRateLimitStatus(RateLimitStatusEvent limit) {
 		String str = "Remain:";
-		str += limit.getRateLimitStatus().getRemainingHits();
+		str += limit.getRateLimitStatus().getRemaining();
 		int remain = (limit.getRateLimitStatus().getSecondsUntilReset()/60)+1;
 		str += "/ Reset: "+remain+"min after";
 		showToastFromThread(str, Toast.LENGTH_SHORT);

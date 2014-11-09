@@ -29,7 +29,7 @@ public class MentionTimelineFragment extends BasicTimelineFragment {
 	@Override
 	protected ResponseList<Status> getTweets(Paging p) throws TwitterException {
 		Log.d(TAG,"Get Mentions");
-		return mInterface.getTwitter().getMentions(p);
+		return mInterface.getTwitter().getMentionsTimeline(p);
 	}
 
 }

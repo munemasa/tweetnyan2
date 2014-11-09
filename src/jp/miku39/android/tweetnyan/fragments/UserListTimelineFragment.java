@@ -174,7 +174,7 @@ public class UserListTimelineFragment extends BasicTimelineFragment {
 	protected ResponseList<Status> getTweets(Paging p) throws TwitterException {
 		Log.d(TAG,"Get UserList Timeline");
 		int pos = mSpinner.getSelectedItemPosition();
-		int id = 0;
+		long id = 0;
 		if( pos>0 ){
 			pos--;
 			id = mUserList.get(pos).getId();

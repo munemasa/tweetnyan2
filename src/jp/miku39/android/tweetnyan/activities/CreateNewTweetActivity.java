@@ -437,10 +437,12 @@ public class CreateNewTweetActivity extends ActivityWithTheme implements Locatio
 			public void run() {
 				try {
 					ConfigurationBuilder configurationbuilder = new ConfigurationBuilder()
-						.setOAuthConsumerKey(mTwitter.getConfiguration().getOAuthConsumerKey())
-						.setOAuthConsumerSecret(mTwitter.getConfiguration().getOAuthConsumerSecret())
-						.setOAuthAccessToken(mTwitter.getOAuthAccessToken().getToken())
-						.setOAuthAccessTokenSecret(mTwitter.getOAuthAccessToken().getTokenSecret());
+							.setOAuthConsumerKey(mTwitter.getConfiguration().getOAuthConsumerKey())
+							.setOAuthConsumerSecret(
+									mTwitter.getConfiguration().getOAuthConsumerSecret())
+							.setOAuthAccessToken(mTwitter.getOAuthAccessToken().getToken())
+							.setOAuthAccessTokenSecret(
+									mTwitter.getOAuthAccessToken().getTokenSecret());
 					configurationbuilder.setMediaProviderAPIKey( Consts.sTwitpicAPIKey );
 
 					ImageUploadFactory imageuploadfactory = new ImageUploadFactory(configurationbuilder.build());
